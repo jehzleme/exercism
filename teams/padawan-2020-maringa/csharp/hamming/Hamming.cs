@@ -7,9 +7,9 @@ public static class Hamming
         var contador = 0;
 
         if (firstStrand == secondStrand) return 0;
-        if (firstStrand.Length != secondStrand.Length
-            || firstStrand != null && secondStrand == null
-            || firstStrand == null && secondStrand != null)
+        if (firstStrand.Length != secondStrand.Length)
+            //|| firstStrand != null && secondStrand == null
+            //|| firstStrand == null && secondStrand != null)
             throw new ArgumentException();
         else
         {
