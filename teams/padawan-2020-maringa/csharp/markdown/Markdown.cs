@@ -57,7 +57,7 @@ public static class Markdown
 
     public static string Parse(string markdown)
     {
-        var lines = markdown.Split(Environment.NewLine);
+        var lines = markdown.Split("\n");
         var result = new StringBuilder();
         var list = false;
 
